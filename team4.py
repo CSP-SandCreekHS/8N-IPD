@@ -36,7 +36,7 @@ def move(my_history, their_history, my_score, their_score):
         return 'b'
     if their_history[0] == 'c':
         return 'c'
-    if my score > 700:
+    if my_score > 700:
         return 'b'
     
     
