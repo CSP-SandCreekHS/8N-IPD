@@ -5,7 +5,7 @@
 #     strategy_description: a string
 #     move: A function that returns 'c' or 'b'
 ####
-
+import random
 team_name = 'Team Rocket is blasting off agaaaaaaaaaaain' # Only 10 chars displayed.
 strategy_name = 'The name the team gives to this strategy'
 strategy_description = 'How does this strategy decide?'
@@ -25,13 +25,14 @@ def move(my_history, their_history, my_score, their_score):
     
     # Analyze my_history and their_history and/or my_score and their_score.
     # Decide whether to return 'c' or 'b'.
-    
+    choice = 'b'
     if my_score < -500:
         return 'b'
     elif my_score > 0 and their_score < 100:
         return 'c'
     elif their_history[-3:] is 'bbb':
-        return 'b'
+        choice = random.choice(['b','b','b','c'])
+        return choice
     else:
         return 'c'     
 
@@ -63,13 +64,13 @@ if __name__ == '__main__':
          print 'Test passed'
      # Test 2: Continue betraying if they collude despite being betrayed.
     test_move(my_history='',
-              their_history='', 
+              their_history='bbb', 
               # Note the scores are for testing move().
               # The history and scores don't need to match unless
               # that is relevant to the test of move(). Here,
               # the simulation (if working correctly) would have awarded 
               # 300 to me and -750 to them. This test will pass if and only if
               # move('bbb', 'ccc', 0, 0) returns 'b'.
-              my_score=-501, 
+              my_score=-5, 
               their_score=0,
               result='b')             
