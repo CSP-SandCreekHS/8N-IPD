@@ -9,8 +9,8 @@ import random
 
 team_name = 'Aiden is THICC'
 # Only 10 chars displayed.
-strategy_name = 'The name the team gives to this strategy'
-strategy_description = 'How does this strategy decide?'
+strategy_name = 'Yeet'
+strategy_description = 'The first one is a 6:4 chance to collude or betray the rest are betray'
     
 def move(my_history, their_history, my_score, their_score):
     ''' Arguments accepted: my_history, their_history are strings.
