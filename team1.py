@@ -7,7 +7,7 @@ import random
 #     move: A function that returns 'c' or 'b'
 ####
 
-team_name = 'Aiden is THICC'
+team_name = 'Aiden is THICCccccc'
 # Only 10 chars displayed.
 strategy_name = 'Yeet'
 strategy_description = 'The first one is a 6:4 chance to collude or betray the rest are betray'
