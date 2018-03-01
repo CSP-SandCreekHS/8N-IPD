@@ -32,14 +32,10 @@ def move(my_history, their_history, my_score, their_score):
         return 'b'
     elif my_score >= -100:
         return 'b'
-    else:
-        return 'c'
-        
-        
     if len(my_history) % 3:
         return 'b'
     elif my_score <= 100:
-        return 'b'
+        return 'b'    
     else:
         return 'c'
     
