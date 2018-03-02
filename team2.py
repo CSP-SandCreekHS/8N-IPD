@@ -7,7 +7,7 @@
 ####
 
 team_name = 'Team bob is cool' # Only 10 chars displayed.
-strategy_name = 'Destroy'
+strategy_name = 'Logan and Sabella'
 strategy_description = 'trust if they trust, otherwise destroy'
     
 def move(my_history, their_history, my_score, their_score):

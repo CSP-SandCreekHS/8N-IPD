@@ -7,7 +7,7 @@ import random
 #     move: A function that returns 'c' or 'b'
 ####
 
-team_name = 'Poogie Master' # Only 10 chars displayed.
+team_name = 'Drew' # Only 10 chars displayed.
 strategy_name = 'Random, based on opponents recent history'
 strategy_description = 'Random, but influenced by their choice'
     

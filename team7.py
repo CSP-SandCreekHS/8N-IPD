@@ -8,7 +8,7 @@
 
 
 team_name = 'teamrocket' # Only 10 chars displayed.
-strategy_name = 'The name the team gives to this strategy'
+strategy_name = 'Faith and Ewan'
 strategy_description = 'How does this strategy decide?'
     
 def move(my_history, their_history, my_score, their_score):
@@ -33,7 +33,7 @@ def move(my_history, their_history, my_score, their_score):
             cCount += 1
         if i == 'b':
             bCount += 1
-    if (bCount / len(their_history)* 100) > 40:
+    if len(my_history) > 0 and (bCount / len(their_history)* 100) > 40:
         return 'b'
     else:
         return 'c'

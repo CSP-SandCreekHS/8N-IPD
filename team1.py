@@ -9,7 +9,7 @@ import random
 
 team_name = 'Aiden is THICCccccc'
 # Only 10 chars displayed.
-strategy_name = 'Yeet'
+strategy_name = 'Aiden and Ethan'
 strategy_description = 'The first one is a 6:4 chance to collude or betray the rest are betray'
     
 def move(my_history, their_history, my_score, their_score):
@@ -19,6 +19,7 @@ def move(my_history, their_history, my_score, their_score):
     Make my move.
     Returns 'c' or 'b'. 
     '''
+    Rounds = 0
     ans = 'yeet'
     if len(my_history) == 0:
         boc = random.randint(1,10)
